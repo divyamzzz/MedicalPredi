@@ -25,7 +25,7 @@ function DiabetesPredictor() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.post('http://127.0.0.1:5000/api/diabetese', formData)
+        axios.post('https://backend-medical-n6jr.onrender.com/api/diabetese', formData)
             .then(res => {
                 setResult(res.data.prediction);
                 setError(null);
