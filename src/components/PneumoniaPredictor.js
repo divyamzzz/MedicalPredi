@@ -28,7 +28,7 @@ function PneumoniaPredictor() {
         const formData = new FormData();
         formData.append('image', selectedFile);
 
-        axios.post('https://backend-medical-n6jr.onrender.com/pneumoniapredict', formData, {
+        axios.post('https://backend-medical-n6jr.onrender.com/api/pneumoniapredict', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
