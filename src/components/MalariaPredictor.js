@@ -28,7 +28,7 @@ function MalariaPredictor() {
         const formData = new FormData();
         formData.append('image', selectedFile);
 
-        axios.post('https://backend-medical-n6jr.onrender.com/malariapredict', formData, {
+        axios.post('https://backend-medical-n6jr.onrender.com/api/malariapredict', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data'
             }
